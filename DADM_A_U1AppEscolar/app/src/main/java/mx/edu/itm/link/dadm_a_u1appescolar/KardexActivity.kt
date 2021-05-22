@@ -2,9 +2,11 @@ package mx.edu.itm.link.dadm_a_u1appescolar
 
 import android.app.Activity
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import mx.edu.itm.link.dadm_a_u1appescolar.adapters.RecyclerKardexAdapter
@@ -16,6 +18,7 @@ class KardexActivity : AppCompatActivity() {
 
     lateinit var recyclerKardex : RecyclerView
 
+    @RequiresApi(Build.VERSION_CODES.KITKAT)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kardex)
