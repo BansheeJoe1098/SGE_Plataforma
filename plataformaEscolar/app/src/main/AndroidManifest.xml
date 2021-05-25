@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.plataformaescolar">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PlataformaEscolar">
+        <activity android:name=".EleccionActivity"></activity>
+        <activity android:name=".clases.Eleccion_Verano" />
+        <activity android:name=".Residencia" />
+        <activity android:name=".Reinscripcion" />
+        <activity android:name=".DatosPersonalesActivity" />
+        <activity android:name=".ReticulaActivity" />
+        <activity android:name=".HorarioActivity" />
+        <activity android:name=".CalificacionesActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

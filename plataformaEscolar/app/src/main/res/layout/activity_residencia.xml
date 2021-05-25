@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Residencia"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A8CAE8F8"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Datos Personales"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Numero de Control"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/numeroControlR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text=""/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/nombreR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/carrera"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/carreraR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semestre"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/semestreR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lugar de Residencia"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/LugarR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proyecto de Residencia"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/ProyectoR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnRegistro"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Registrar a Residencia"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Regresar"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
