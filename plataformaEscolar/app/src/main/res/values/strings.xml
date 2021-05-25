@@ -9,76 +9,25 @@
                     "noControl":"18120234",
                     "carrera":"TICS",
                     "semestre":9,
-                    "contrasena":"123"
+                    "contrasena":"123",
+                    "NoReferencia":"T15384929PA"
                 },
                 {
                     "nombre":"'Juan Orozco'",
                     "noControl":"18120222",
                     "carrera":"TICS",
                     "semestre":8,
-                    "contrasena":"1234"
+                    "contrasena":"1234",
+                    "NoReferencia":"JO16673UJA"
                 },
                 {
                     "nombre":"'Joe Miguel Rodriguez '",
                     "noControl":"18120232",
                     "carrera":"Sistemas",
                     "semestre":5,
-                    "contrasena":"12345"
+                    "contrasena":"12345",
+                    "NoReferencia":"MK996087"
                 }
-            ]
-        }
-    </string>
-
-    <string name="jsonMateriasVerano" translatable="false">
-        {
-            "Fundamentosdeinvestigacion" : [
-                {
-                    "registrados":0,
-
-                }
-
-            ],
-                   "contabilidad" : [
-                {
-                    "registrados":0,
-
-                }
-
-            ],
-                   "desarrollo" : [
-                {
-                    "registrados":0,
-
-                }
-
-            ],
-                   "circuitos" : [
-                {
-                    "registrados":0,
-
-                }
-
-            ],
-                   "administracion" : [
-                {
-                    "registrados":0,
-
-                }
-
-            ],
-                   "programacionweb" : [
-                {
-                    "registrados":1,
-
-                }
-
-            ],
-                    "sistemasoperativos" : [
-                {
-                    "registrados":1,
-
-                }
-
             ]
         }
     </string>
@@ -89,11 +38,21 @@
                 {
                     "nombre":"'Oscar Tera'",
                     "noControl":"18120234",
-                    "carrera":"TICS",
-                    "semestre":9,
-                    "contrasena":"123"
+                    "NoReferencia":"T15384929PA",
+                    "materia":"'Sistemas Operativos'"
                 }
-            ]
+            ],
+                "Materias" : [
+                {
+                    "fundamentosInvestigacion":0,
+                    "contabilidad":0,
+                    "desarrollo":0,
+                    "circuitos":0,
+                    "administracion":0,
+                    "programacionWEB":0,
+                    "sistemasOperativos":10
+                }
+        ]
         }
     </string>
 

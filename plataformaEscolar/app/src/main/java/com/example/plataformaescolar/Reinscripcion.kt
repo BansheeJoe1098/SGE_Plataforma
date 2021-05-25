@@ -15,11 +15,13 @@ class Reinscripcion : AppCompatActivity() {
         setContentView(binding.root)
 
         var stringUsuario = intent.getStringExtra("usuario")
-        println("u3 " +stringUsuario)
+        var stringVerano = intent.getStringExtra("verano")
+
 
         binding.btnEleccion.setOnClickListener {
             val intent = Intent(this,EleccionActivity::class.java)
             intent.putExtra("usuario", stringUsuario)
+            intent.putExtra("verano",stringVerano)
             startActivity(intent)
         }
 
@@ -28,6 +30,13 @@ class Reinscripcion : AppCompatActivity() {
             val intent = Intent(this,Residencia::class.java)
             intent.putExtra("usuario", stringUsuario)
             println("valor" +stringUsuario)
+            startActivity(intent)
+        }
+
+        binding.btnDatosIn.setOnClickListener {
+            val intent = Intent(this,DatosInscripcion::class.java)
+            intent.putExtra("usuario", stringUsuario)
+            intent.putExtra("verano",stringVerano)
             startActivity(intent)
         }
     }

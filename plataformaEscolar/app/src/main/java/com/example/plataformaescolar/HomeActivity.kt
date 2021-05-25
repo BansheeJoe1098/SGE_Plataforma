@@ -17,6 +17,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         var stringUsuario = intent.getStringExtra("usuario")
+        var stringVerano = intent.getStringExtra("verano")
         println(" u "  +stringUsuario)
         //println( "*** USUARIO: ")
         //println(stringUsuario)
@@ -53,7 +54,8 @@ class HomeActivity : AppCompatActivity() {
         binding.Reinscrpcion.setOnClickListener {
             val intent = Intent(this,Reinscripcion::class.java)
             intent.putExtra("usuario", stringUsuario)
-           // println(" u2 " +stringUsuario)
+            intent.putExtra("verano",stringVerano)
+            println(" DESDE HOME " +stringVerano)
             startActivity(intent)
         }
 

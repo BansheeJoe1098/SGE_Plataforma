@@ -19,7 +19,8 @@ class MainActivity : AppCompatActivity() {
         val miJson = resources.getString(R.string.jsonUsuarios)
         val jsonUsuarios = JSONObject(miJson)
         val arrayUsuarios = jsonUsuarios.getJSONArray("usuarios")
-
+       val miJson2 = resources.getString(R.string.AlumnosVerano)
+        val jsonVerano = JSONObject(miJson2)
         binding.btnLogin.setOnClickListener {
             val noControl = binding.noControlLogin.text.toString()
             val contrasena = binding.contrasenaLogin.text.toString()
@@ -33,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                     encontrado = true
                     val intent = Intent(this, HomeActivity::class.java)
                     intent.putExtra("usuario", jsonUsuario.toString())
-                    println("Usario" +jsonUsuario)
+                    intent.putExtra("verano",jsonVerano.toString())
                     startActivity(intent)
                     finish()
                 }
