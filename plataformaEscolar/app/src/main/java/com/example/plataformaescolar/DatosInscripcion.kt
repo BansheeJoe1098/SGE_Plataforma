@@ -29,13 +29,54 @@ class DatosInscripcion : AppCompatActivity() {
             if (ff==control.getString("noControl")){
                 binding.materia.setText(control.getString("materia"))
                 val materia = control.getString("materia")
-                val nA = m.getString(materia)
-                println("esto es lo que tiene  " + nA )
-                //if(nA>= 10){
-                  //  binding.referencia.setText(jsonUsuario.getString("NoReferencia"))
-                //}else{
-                    binding.referencia.setText("No hay suficientes alumnos para el grupo")
-                //}
+               when(materia){
+                   "Fundamentos De Investigacion" -> { var nA = m.getInt("fundamentosInvestigacion")
+                       if(nA>= 10){
+                           binding.referencia.setText(jsonUsuario.getString("NoReferencia"))
+                       }else{
+                           binding.referencia.setText("No hay suficientes alumnos para el grupo")
+                       }
+                   }
+                   "Contabilidad" -> {var nA = m.getInt("fundamentosInvestigacion")
+                       if(nA>= 10){
+                           binding.referencia.setText(jsonUsuario.getString("NoReferencia"))
+                       }else{
+                           binding.referencia.setText("No hay suficientes alumnos para el grupo")
+                       }
+                   }
+                   "Desarrollo sustentable" -> { var nA = m.getInt("fundamentosInvestigacion")
+                       if(nA>= 10){
+                           binding.referencia.setText(jsonUsuario.getString("NoReferencia"))
+                       }else{
+                           binding.referencia.setText("No hay suficientes alumnos para el grupo")
+                       }
+                   }
+                   "Circuitos" -> {
+                   }
+                   "Administracion De Proyectos" -> { var nA = m.getInt("fundamentosInvestigacion")
+                       if(nA>= 10){
+                           binding.referencia.setText(jsonUsuario.getString("NoReferencia"))
+                       }else{
+                           binding.referencia.setText("No hay suficientes alumnos para el grupo")
+                       }
+                   }
+                   "programacion web" -> { var nA = m.getInt("fundamentosInvestigacion")
+                       if(nA>= 10){
+                           binding.referencia.setText(jsonUsuario.getString("NoReferencia"))
+                       }else{
+                           binding.referencia.setText("No hay suficientes alumnos para el grupo")
+                       }
+                   }
+                   "sistemas operativos" -> { var nA = m.getInt("fundamentosInvestigacion")
+                       if(nA>= 10){
+                           binding.referencia.setText(jsonUsuario.getString("NoReferencia"))
+                       }else{
+                           binding.referencia.setText("No hay suficientes alumnos para el grupo")
+                       }
+                   }
+
+               }
+
             }
         }
 
