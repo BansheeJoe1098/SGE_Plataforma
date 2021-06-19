@@ -29,7 +29,8 @@ class DBManager
 
             sql =
                     "INSERT INTO alumnos" +
-                            "(NControl,Nombre,Carrera,Semestre,Contrasenia) VALUES ('18120234','Oscar Tera','ITICS','9','123')"
+                            "(NControl,Nombre,Carrera,Semestre,Contrasenia)" +
+                            " VALUES ('18120234','Oscar Tera','ITICS','9','123')"
             it.execSQL(sql)
         }
     }
