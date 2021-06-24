@@ -1,15 +1,20 @@
-package com.example.plataformaescolar
+package com.example.plataformaescolar.clases.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
+import com.example.plataformaescolar.HomeActivity
+import com.example.plataformaescolar.R
 import com.example.plataformaescolar.databinding.ActivityMainBinding
+import com.example.plataformaescolar.modules.DBManager
+import com.example.plataformaescolar.modules.alumnos
 import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    lateinit var manager : DBManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,10 +22,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val miJson = resources.getString(R.string.jsonUsuarios)
+        var alumnos: alumnos? = null
         val jsonUsuarios = JSONObject(miJson)
         val arrayUsuarios = jsonUsuarios.getJSONArray("usuarios")
        val miJson2 = resources.getString(R.string.AlumnosVerano)
         val jsonVerano = JSONObject(miJson2)
+
+
+
         binding.btnLogin.setOnClickListener {
             val noControl = binding.noControlLogin.text.toString()
             val contrasena = binding.contrasenaLogin.text.toString()

@@ -1,10 +1,10 @@
-package com.example.plataformaescolar
+package com.example.plataformaescolar.clases.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
-import com.example.plataformaescolar.clases.AdapterCalificacion
+import com.example.plataformaescolar.R
 import com.example.plataformaescolar.clases.AdapterReticula
 import com.example.plataformaescolar.clases.Calificacion
 import com.example.plataformaescolar.databinding.ActivityReticulaBinding

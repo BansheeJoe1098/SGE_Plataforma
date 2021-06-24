@@ -1,13 +1,10 @@
-package com.example.plataformaescolar
+package com.example.plataformaescolar.clases.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.plataformaescolar.clases.Usuario
+import com.example.plataformaescolar.HomeActivity
 import com.example.plataformaescolar.databinding.ActivityDatosPersonalesBinding
-import com.google.gson.Gson
-import com.google.gson.JsonObject
-import com.google.gson.JsonParser
 import org.json.JSONObject
 
 class DatosPersonalesActivity : AppCompatActivity() {
