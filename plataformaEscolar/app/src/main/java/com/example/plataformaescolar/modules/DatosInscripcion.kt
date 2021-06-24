@@ -1,12 +1,16 @@
-package com.example.plataformaescolar
+package com.example.plataformaescolar.modules
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.plataformaescolar.databinding.ActivityDatosInscripcionBinding
+import kotlinx.android.synthetic.main.activity_datos_inscripcion.*
 import org.json.JSONObject
 
 class DatosInscripcion : AppCompatActivity() {
     private lateinit var binding: ActivityDatosInscripcionBinding
+
+    lateinit var manager : DBManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDatosInscripcionBinding.inflate(layoutInflater)
@@ -18,6 +22,8 @@ class DatosInscripcion : AppCompatActivity() {
         val m = arrayMateriaVerano.getJSONObject(0)
         var usuario = intent.getStringExtra("usuario")
         val jsonUsuario = JSONObject(usuario)
+
+
 
 
         binding.numeroControl.setText(jsonUsuario.getString("noControl"))

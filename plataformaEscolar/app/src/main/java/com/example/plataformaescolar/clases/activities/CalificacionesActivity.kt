@@ -1,11 +1,10 @@
-package com.example.plataformaescolar
+package com.example.plataformaescolar.clases.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.plataformaescolar.R
 import com.example.plataformaescolar.clases.AdapterCalificacion
-import com.example.plataformaescolar.clases.AdapterMaterias
 import com.example.plataformaescolar.clases.Calificacion
-import com.example.plataformaescolar.clases.Materia
 import com.example.plataformaescolar.databinding.ActivityCalificacionesBinding
 import org.json.JSONObject
 

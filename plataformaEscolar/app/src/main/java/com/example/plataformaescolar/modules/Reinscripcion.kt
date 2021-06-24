@@ -1,9 +1,9 @@
-package com.example.plataformaescolar
+package com.example.plataformaescolar.modules
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.plataformaescolar.databinding.ActivityHomeBinding
+import com.example.plataformaescolar.clases.activities.EleccionActivity
 import com.example.plataformaescolar.databinding.ActivityReinscripcionBinding
 
 class Reinscripcion : AppCompatActivity() {
@@ -19,7 +19,7 @@ class Reinscripcion : AppCompatActivity() {
 
 
         binding.btnEleccion.setOnClickListener {
-            val intent = Intent(this,EleccionActivity::class.java)
+            val intent = Intent(this, EleccionActivity::class.java)
             intent.putExtra("usuario", stringUsuario)
             intent.putExtra("verano",stringVerano)
             startActivity(intent)
@@ -27,14 +27,14 @@ class Reinscripcion : AppCompatActivity() {
 
 
         binding.btnResidencia.setOnClickListener {
-            val intent = Intent(this,Residencia::class.java)
+            val intent = Intent(this, Residencia::class.java)
             intent.putExtra("usuario", stringUsuario)
             println("valor" +stringUsuario)
             startActivity(intent)
         }
 
         binding.btnDatosIn.setOnClickListener {
-            val intent = Intent(this,DatosInscripcion::class.java)
+            val intent = Intent(this, DatosInscripcion::class.java)
             intent.putExtra("usuario", stringUsuario)
             intent.putExtra("verano",stringVerano)
             startActivity(intent)

@@ -1,4 +1,4 @@
-package com.example.plataformaescolar
+package com.example.plataformaescolar.clases.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,12 +7,9 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.TextView
-import com.example.plataformaescolar.clases.Usuario
+import com.example.plataformaescolar.HomeActivity
 import com.example.plataformaescolar.databinding.ActivitySignInBinding
-import com.google.gson.Gson
-import org.json.JSONArray
 import org.json.JSONObject
-import java.io.File
 import java.util.ArrayList
 
 class SignInActivity : AppCompatActivity() {

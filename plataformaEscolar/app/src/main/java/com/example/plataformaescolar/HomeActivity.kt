@@ -4,7 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.KeyEvent
+import com.example.plataformaescolar.clases.activities.*
 import com.example.plataformaescolar.databinding.ActivityHomeBinding
+import com.example.plataformaescolar.modules.Reinscripcion
 
 
 class HomeActivity : AppCompatActivity() {
@@ -52,7 +54,7 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.Reinscrpcion.setOnClickListener {
-            val intent = Intent(this,Reinscripcion::class.java)
+            val intent = Intent(this, Reinscripcion::class.java)
             intent.putExtra("usuario", stringUsuario)
             intent.putExtra("verano",stringVerano)
             println(" DESDE HOME " +stringVerano)

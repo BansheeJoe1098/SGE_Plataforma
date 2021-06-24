@@ -1,4 +1,4 @@
-package com.example.plataformaescolar
+package com.example.plataformaescolar.clases.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,15 +6,23 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.plataformaescolar.HomeActivity
+import com.example.plataformaescolar.R
 import com.example.plataformaescolar.clases.AdapterReticula
 import com.example.plataformaescolar.clases.Calificacion
 import com.example.plataformaescolar.databinding.ActivityEleccionBinding
+import com.example.plataformaescolar.modules.DBManager
+import com.example.plataformaescolar.modules.DBMaterias
+import com.example.plataformaescolar.modules.alumnos
 import org.json.JSONObject
 
 class EleccionActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     private lateinit var binding: ActivityEleccionBinding
 
     private var numSemestre = ""
+
+    lateinit var manager : DBMaterias
+    lateinit var manager2 : DBManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,6 +51,7 @@ class EleccionActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener
                   val i  = binding.spinnerSemestres.selectedItem
                 when(i){
                     "Semestre 1" -> {
+                        /*
                        val jsonAlumnoVeranoEdit = JSONObject()
                         jsonAlumnoVeranoEdit.put("nombre",jsonUsuario.getString("nombre"))
                         jsonAlumnoVeranoEdit.put("noControl",jsonUsuario.getString("noControl"))
@@ -50,6 +59,13 @@ class EleccionActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener
                         jsonAlumnoVeranoEdit.put("materia","Fundamentos De Investigacion")
                         val alumno = jsonAlumnoVerano.getJSONArray("usuarios")
                         alumno.put(jsonAlumnoVeranoEdit)
+                         */
+                            val dba = manager2.newalumnno(alumnos
+                            (1,
+                                    jsonUsuario.getString("NoControl").toInt(),
+                                    jsonUsuario.getString("Nombre"),
+                                    "TICS",8,"123","Fundamnetos"))
+
                      var n = m.getInt("fundamentosInvestigacion") +1
                        m.put("fundamentosInvestigacion", n)
                         Toast.makeText(this, "Te has registrado a fundamentos de investigacion", Toast.LENGTH_SHORT).show()

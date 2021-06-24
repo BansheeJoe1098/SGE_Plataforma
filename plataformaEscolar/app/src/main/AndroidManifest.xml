@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PlataformaEscolar">
-        <activity android:name=".DatosInscripcion"></activity>
-        <activity android:name=".EleccionActivity" />
+        <activity android:name=".modules.DatosInscripcion"></activity>
+        <activity android:name=".clases.activities.EleccionActivity" />
         <activity android:name=".clases.Eleccion_Verano" />
-        <activity android:name=".Residencia" />
-        <activity android:name=".Reinscripcion" />
-        <activity android:name=".DatosPersonalesActivity" />
-        <activity android:name=".ReticulaActivity" />
-        <activity android:name=".HorarioActivity" />
-        <activity android:name=".CalificacionesActivity" />
+        <activity android:name=".modules.Residencia" />
+        <activity android:name=".modules.Reinscripcion" />
+        <activity android:name=".clases.activities.DatosPersonalesActivity" />
+        <activity android:name=".clases.activities.ReticulaActivity" />
+        <activity android:name=".clases.activities.HorarioActivity" />
+        <activity android:name=".clases.activities.CalificacionesActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".SignInActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".clases.activities.SignInActivity" />
+        <activity android:name=".clases.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
